@@ -12,4 +12,7 @@ const HelloWorld = defineComponent<{ msg: string }>(({ msg }) => {
   );
 });
 
+// will work if add this line
+// HelloWorld.props = { msg: { type: String } };
+
 export default HelloWorld;

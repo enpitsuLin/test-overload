@@ -1,8 +1,13 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+<script lang="ts">
+import { defineComponent } from "vue";
 import Overload1 from "./components/Overload1";
 import Overload2 from "./components/Overload2";
+export default defineComponent({
+  components: { Overload1, Overload2 },
+  setup() {
+    console.log(Overload1, Overload2);
+  }
+});
 </script>
 
 <template>
